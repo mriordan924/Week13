@@ -1,0 +1,286 @@
+body {
+    background-color: rgba(91, 48, 31, 0.705);
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0;
+
+}
+
+.logoImage{
+    /* width: 1000px; */
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    max-width: 50%;
+    height: auto;
+    /* display: flex;
+    justify-content: left; */
+    
+}
+
+.backgroundPhoto {
+    /* position: absolute;
+    top: 0;
+    right: 0; */
+    max-width: 50%;
+    height: auto;
+}
+
+/* nav bar styling */
+nav{
+    /* width: 50vw; */
+    /* background-color:rgba(159, 107, 61, 0.759); */
+    color:rgb(255, 228, 196);
+    font-size: 25px;
+    font-family:sans-serif;
+    padding: -5px 5px -5px -5px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: right;
+    justify-content: right;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 5px; 
+    margin-inline: 10px;
+    /* justify-content: space-between;   */
+}
+
+nav ul li:hover {
+    color:rgb(207, 179, 144);
+    font-weight: bold;
+    transform: scale(1.05);
+    /* transition: color 0.3s ease; */
+}
+
+.hamburger {
+    display: none;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* welcome styling */
+
+.welcome {
+    /* text-align: center; */
+    text-transform: uppercase;
+    /* background-color: rgba(231, 189, 222, 0.518); */
+    /* padding: 20px 0; */
+    font-size: larger;
+    letter-spacing: 2px;
+    margin-top: -60px;
+    
+}
+
+.happyStyling {
+    color:rgb(207, 179, 144);
+    text-align: center;
+    margin-left: 95px;
+}
+
+/* login container: holds winner image, login form and calendar image */
+
+.loginContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /* height: 20px; */
+ } 
+
+ /* winner image */
+
+.winnerImage{
+    flex:1;
+    max-width: 35%;
+    height: max-content;
+    /* width: 50px; */
+    margin-left: 30px;
+    margin-top: -100px;
+    /* margin-right: 20px; */
+  }
+
+
+.winnerPhoto {
+    border: solid 40px rgba(83, 199, 16, 0.356);
+}
+
+.loginForm {
+    background-color: rgb(255, 228, 196);
+    padding: 20px 70px 20px 50px; 
+    border: solid 10px rgba(83, 199, 16, 0.356);
+    border-radius: 10px;
+    /* max-width: 350px; */
+    /* margin: auto; */
+    /* margin-top: -15px; */
+    /* display: flex; */
+    flex-direction:column;
+    /* align-items: center; */
+    /* justify-content: center; */
+    flex:1;
+    max-width: 15%;
+    /* margin-right:20px; */
+    margin-left: -70px;
+    margin-top: -10px;
+
+}
+  
+  label {
+    display: block;
+    font-weight: bold;
+    font-size: 18px; 
+  }
+  
+  input[type='text'],
+  input[type='password'] {
+    width: 100%;
+    padding: 15px; 
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 5px;
+    font-size: 18px; 
+    outline: none; 
+  }
+  
+  /* trying to turn off autofill */
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px white inset !important;
+  }
+
+  /* "log in" */
+  .loginForm h3 {
+    font-size: 30px;
+    margin-bottom: 15px; 
+    margin-top: 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  
+  /* submit button */
+  .submitButton {
+    margin-top: 20px; 
+    background-color: rgb(255, 255, 255);
+    color: rgb(91, 48, 31);
+    padding: 12px 24px;
+    /* border: none; */
+    border-color: rgb(91, 48, 31);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 18px; 
+
+  }
+  
+  .submitButton:hover{
+    background-color: rgba(231, 189, 222, 0.518);
+  } 
+
+  /* calendar image */
+
+  .calendarImage{
+    flex:1;
+    max-width: 25%;
+    /* height: 2px; */
+    /* margin-left: 30px; */
+    /* margin-right: -10px; */
+    margin-top: -55px;
+    /* display: float; */
+    padding: 5px;
+  }
+
+  .calendarPhoto {
+    border: solid 5px rgba(83, 199, 16, 0.356);
+    height: 450px;
+    width: 450px;
+    margin-right: 70px;
+    margin-left: -70px;
+    }
+
+  .footer {
+    background-color: rgba(231, 189, 222, 0.518);
+    text-align: center;
+    text-transform: uppercase;
+    padding: 2px;
+    font-size: larger;
+    letter-spacing: 2px;
+  }
+
+
+
+
+
+  /* for small screens */
+@media screen and (max-width: 768px) {
+    .hamburger {
+        display: block;
+    }
+    
+    nav ul {
+        flex-direction: column; 
+        position: absolute right;
+        top: 60px; 
+        left: 0;
+        background-color: rgb(255, 228, 196);
+        width: 200px;
+        padding: 1px;
+        display: none;
+        border: 10px solid rgb(201, 245, 230);
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        padding: 10px;
+        text-align: center;
+        color: rgb(91, 48, 31);
+        font-size:medium;
+    }
+
+    .loginContainer {
+        flex-direction: column;
+        align-items: center; 
+      }  
+
+      .winnerImage,
+      .calendarImage {
+        margin: 0;
+        padding: 0;
+        max-width: 100%; 
+      }
+
+      .loginForm {
+        max-width: 80%;
+        margin: 10px;
+      }
+}
